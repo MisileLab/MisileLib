@@ -1,9 +1,8 @@
 [package]
-name = "rust-template"
+name = "MisileLib"
 version = "0.1.0"
-description = "yeah."
-repository = "https://github.com/misilelab/rust-template"
-documentation = "https://docs.rs/rust-template"
+description = "Library for misilelab's projects"
+repository = "https://github.com/misilelab/MisileLib"
 authors = ["MisileLaboratory"]
 readme = "README.md"
 license-file = "LICENSE.md"
