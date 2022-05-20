@@ -1,5 +1,5 @@
 [package]
-name = "MisileLib"
+name = "misile_lib"
 version = "0.1.0"
 description = "Library for misilelab's projects"
 repository = "https://github.com/misilelab/MisileLib"
