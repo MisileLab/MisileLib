@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "misilelib-python"
+name = "misilelibpy"
 version = "0.1.0"
 description = "MisileLib-Python"
 authors = ["MisileLaboratory"]
@@ -9,7 +9,6 @@ packages = [{include = "misilelib_python"}]
 
 [tool.poetry.dependencies]
 python = "3.10.7"
-
 
 [build-system]
 requires = ["poetry-core"]
