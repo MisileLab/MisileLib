@@ -5,7 +5,7 @@ description = "MisileLib-Python"
 authors = ["MisileLaboratory"]
 license = "MisileLab License"
 readme = "README.md"
-packages = [{include = "misilelib_python"}]
+packages = [{include = "misilelibpy"}]
 
 [tool.poetry.dependencies]
 python = "3.10.7"
