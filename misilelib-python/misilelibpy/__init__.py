@@ -1,10 +1,9 @@
 from platform import system as getos
+from os.path import join
 
 def check_path(unixpath: str):
-    if getos() == "windows":
-        return unixpath.replace('/', '\\')
-    else:
-        return unixpath
+    a = pathp.split("/")
+    return join(*a)
 
 def write_once(path: str, con: str):
     a = open(path, 'w')
