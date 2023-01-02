@@ -6,12 +6,10 @@ def check_path(unixpath: str):
     return join(*a)
 
 def write_once(path: str, con: str):
-    a = open(path, 'w')
-    a.write(con)
-    a.close()
+    with open(path, 'w') as a:
+        a.write(con)
 
 def read_once(path: str):
-    a = open(path, 'r')
-    b = a.read()
-    a.close()
+    with open(path, 'r') as a:
+        b = a.read()
     return b
