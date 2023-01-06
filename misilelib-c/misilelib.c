@@ -1,5 +1,6 @@
-
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
 
 char single_input(char printstr[]) {
     printf("%s", printstr);
@@ -30,4 +31,8 @@ double double_input(char printstr[]) {
 void multiplechars(char printstr[], char* retval) {
     printf("%s", printstr);
     scanf("%s", retval);
+}
+
+bool compare_strs(char* char1[], char* char2[]) {
+    return strcmp(char1, char2) == 0;
 }
