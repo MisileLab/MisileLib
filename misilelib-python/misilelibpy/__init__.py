@@ -1,7 +1,6 @@
-from platform import system as getos
 from os.path import join
 
-def check_path(unixpath: str):
+def check_path(pathp: str):
     a = pathp.split("/")
     return join(*a)
 
