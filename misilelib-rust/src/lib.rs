@@ -9,9 +9,7 @@ use {
 };
 
 #[cfg(feature = "io")]
-use {
-    std::io::stdin
-};
+use std::io::stdin;
 
 #[cfg(feature = "config")]
 pub fn read_config<T: for<'de> Deserialize<'de>>(file: &File) -> Result<T, Box<dyn Error>> {
