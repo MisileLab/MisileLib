@@ -24,6 +24,7 @@ double double_input(char printstr[]) {
     return retval;
 }
 
+// you need to free buffer after using return value of this function!!!, it's real important!!!
 char* multiplechars(char printstr[], int size) {
     char* buffer;
     buffer = (char*)malloc(sizeof(char) * size);
