@@ -3,11 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-char single_input(char printstr[]) {
-    printf("%s", printstr);
-    return getchar();
-}
-
 int int_input(char printstr[]) {
     int retval;
     printf("%s", printstr);
@@ -29,11 +24,12 @@ double double_input(char printstr[]) {
     return retval;
 }
 
-char multiplechars(char printstr[]) {
+char* multiplechars(char printstr[], int size) {
     char* buffer;
+    buffer = (char*)malloc(sizeof(char) * size);
     printf("%s", printstr);
-    scanf("%s", buffer);
-    return *buffer;
+    fgets(buffer, size, stdin);
+    return buffer;
 }
 
 bool compare_strs(char char1[], char char2[]) {
