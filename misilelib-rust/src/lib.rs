@@ -27,8 +27,7 @@ pub fn write_config<T: for<'de> Serialize>(config: &T, file: &File) -> Result<()
 
 #[cfg(feature = "io")]
 pub fn input() -> Result<String, Box<dyn std::error::Error>> {
-    for i in stdin().lines() {
-        return Ok(i?)
-    }
-    Ok("".to_string())
+    let mut user_input = String::new();
+    stdin().read_line(&mut user_input)?;
+    Ok(user_input)
 }

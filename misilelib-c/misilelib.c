@@ -24,13 +24,9 @@ double double_input(char printstr[]) {
     return retval;
 }
 
-// you need to free buffer after using return value of this function!!!, it's real important!!!
-char* multiplechars(char printstr[], int size) {
-    char* buffer;
-    buffer = (char*)malloc(sizeof(char) * size);
+void multiplechars(char printstr[], char* buffer) {
     printf("%s", printstr);
-    fgets(buffer, size, stdin);
-    return buffer;
+    scanf("%s", buffer);
 }
 
 bool compare_strs(char char1[], char char2[]) {
