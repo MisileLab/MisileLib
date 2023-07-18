@@ -1,7 +1,7 @@
 from os.path import join
 from os import system, name
 
-def check_path(pathp: str):
+def path_converter(pathp: str):
     a = pathp.split("/")
     return join(*a)
 
@@ -14,5 +14,5 @@ def read_once(path: str):
         b = a.read()
     return b
 
-def cls():
+def clear():
     system('cls' if name=='nt' else 'clear')
